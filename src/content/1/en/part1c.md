@@ -680,7 +680,7 @@ Using the component is straightforward, as we only need to pass the state of the
 ```js
 const App = (props) => {
   const [counter, setCounter] = useState(0)
-  const setToValue = (value) => setCounter(value)
+  const setToValue = (value) => () => setCounter(value)
 
   return (
     <div>
